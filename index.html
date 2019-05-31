@@ -32,7 +32,7 @@
 				<h1 class="hero-title">Noor Abdikadir</h1>
 				<p class="hero-sub-title"> Developer - Designer
         </p><div class="hero-sub-title buttons-center"> 
-        	<a href="NoorAbdikadir.pdf" class="resume"  target="_blank">Resume</a> <a href="#" class="design">Designs</a>
+        	<a href="NoorAbdikadir.pdf" class="resume"  target="_blank">Resume</a> <a href="#page03" class="design">Designs</a>
         </div></span>
         </div>
 				<div class="white-box"> 
@@ -69,64 +69,39 @@
 </ul>
 </div>
       </section>
-      <section id="page03" class="flex-center page3">
-          <div class="project-header">
-     <h1 id="projects-title">Projects</h1>
-    <nav class="project-nav">
-      <ul class="project-nav-ul">
-        <li class="active-link project-link"><a href="" class=""><span>project</span> 1</a>
-        </li>
-         <li class="project-link">
-        <a href=""> <span>project</span> 2</a>
-        </li>
-         <li class="project-link">
-         <a href="" ><span>project</span> 3</a>
-        </li>
-      </ul>
-    </nav>
+      <section id="page03" class="page3">
+        <div class="wrapper">
+  <header>
+    <h1 class="anim">UI & UX Design</h1>
+    <p class="anim">As a designer, I make an effort to put myself in the shoes of the client.  Being able to hypothasize the clients personas enables me to be create something different everytime. And these are just a few of my projects to validate this simple fact. (I consider myself a client to myself as well)</p>
+  </header>
+
+  <div class="work">
+    <img class="anim" src="ThirdKidCulture.png" alt="project img">
+    <img class="anim" src="Portfolio.png" alt="project img">
+    <img class="anim" src="sba.png" alt="project img">
+    <img class="anim" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1555417826/Responsive%20Portfolio%20Project%20Page/project4.jpg" alt="project img">
   </div>
-  <div class="project active">
-        <h2>Project Title #1</h2>
-    <img src="https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Project Example">
-    <h3>Description:</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
-    </div>
-     <div class="project">
-        <h2>Project Title #2</h2>
-    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Project Example">
-    <h3>Description:</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
-    </div>
-    <div class="project">
-        <h2>Project Title #3</h2>
-    <img src="https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Project Example">
-    <h3>Description:</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
-    </div>
+
+  <div class="header2">
+    <h1 class="anim">Other Projects</h1>
+    <p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit necessitatibus, eos minima odio, ea ipsam, dicta nihil praesentium soluta fugit aspernatur nisi enim libero quos omnis? Optio suscipit quibusdam incidunt maiores repudiandae laudantium
+      eaque, obcaecati totam architecto aut ab?</p>
+  </div>
+
+  <div class="work2">
+    <img class="anim" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1555417826/Responsive%20Portfolio%20Project%20Page/project5.jpg" alt="project img">
+    <img class="anim" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1555417826/Responsive%20Portfolio%20Project%20Page/project6.jpg" alt="project img">
+  </div>
+
+  <footer>
+    <p>codegrid | Design tutorials</p>
+  </footer>
+</div>
       	</section>
-        <script type="text/javascript">
-          const projectLinks = document.querySelectorAll(".project-link");
-const projects = document.querySelectorAll(".project");
-active = (project, index) => {
-  event.preventDefault();
-  projects.forEach((item, i) => {
-    if (i !== index) {
-      item.classList.remove("active");
-    }
-  projectLinks.forEach((item, i) => {
-      if (i !== index) {
-        item.classList.remove("active-link");
-      }
-    });
-  });
-
-  project.classList.add("active");
-  projectLinks[index].classList.add("active-link");
-};
-
-projectLinks.forEach((link, i) => {
-  link.addEventListener("click", () => active(projects[i], i));
-});
+        <script>
+          window.sr = ScrollReveal();
+sr.reveal(".anim");
 
         </script>
 </body>
