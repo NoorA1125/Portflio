@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -15,23 +18,6 @@
   <label for="click"><span class="burger"></span></label>
 </div>
 </nav>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <!-- Code for thin light grey lines-->
     <div class="outer">
@@ -58,11 +44,10 @@
           <div class="tucsn-az"> 
       
     </div>
-			</div>
+	</div>
 
-		</section>
-      <section>
-      	<section id="about-page" class="flex-center">
+	</section>
+    <section id="about-page" class="flex-center">
         <div id="about-content">
    <h1 class="About-Me">About Me</h1>
   <div class="sentence">
@@ -83,8 +68,66 @@
   </li>
 </ul>
 </div>
-      
-        <section>
-      	<section>
+      </section>
+      <section id="page03" class="flex-center page3">
+          <div class="project-header">
+     <h1 id="projects-title">Projects</h1>
+    <nav class="project-nav">
+      <ul class="project-nav-ul">
+        <li class="active-link project-link"><a href="" class=""><span>project</span> 1</a>
+        </li>
+         <li class="project-link">
+        <a href=""> <span>project</span> 2</a>
+        </li>
+         <li class="project-link">
+         <a href="" ><span>project</span> 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="project active">
+        <h2>Project Title #1</h2>
+    <img src="https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Project Example">
+    <h3>Description:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
+    </div>
+     <div class="project">
+        <h2>Project Title #2</h2>
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Project Example">
+    <h3>Description:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
+    </div>
+    <div class="project">
+        <h2>Project Title #3</h2>
+    <img src="https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Project Example">
+    <h3>Description:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident, possimus, unde suscipit perspiciatis quos nemo incidunt totam quo laborum illo est voluptate ratione doloribus odit pariatur voluptates sed! Est.</p>
+    </div>
+      	</section>
+        <script type="text/javascript">
+          const projectLinks = document.querySelectorAll(".project-link");
+const projects = document.querySelectorAll(".project");
+active = (project, index) => {
+  event.preventDefault();
+  projects.forEach((item, i) => {
+    if (i !== index) {
+      item.classList.remove("active");
+    }
+  projectLinks.forEach((item, i) => {
+      if (i !== index) {
+        item.classList.remove("active-link");
+      }
+    });
+  });
+
+  project.classList.add("active");
+  projectLinks[index].classList.add("active-link");
+};
+
+projectLinks.forEach((link, i) => {
+  link.addEventListener("click", () => active(projects[i], i));
+});
+
+        </script>
 </body>
 </html>

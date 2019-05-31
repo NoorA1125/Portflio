@@ -1,3 +1,4 @@
+ 
  body {
  	margin: 0 auto;
  	padding: 0;
@@ -11,14 +12,14 @@
  }
 
  p {
- 	font-family: Roboto;
+ 	font-family: 'Roboto' sans-serif;
  	font-style: normal;
- 	font-weight: 500;
+ 	font-weight: 800;
  	font-size: 1.2em;
  	line-height: 200%;
  }
 
- nav {
+ .main-content nav{
  	position: absolute;
  	z-index: 999;
  	top: 0;
@@ -365,7 +366,8 @@
  }
 
  .hero-title {
- 	font-size: 3.5em;
+ 	font-size: 3.7em;
+ 	font-weight: 300;
  }
  .hero-sub-title {
  	margin-top: 20px;
@@ -506,8 +508,8 @@
  	align-content: center;
  	position: relative;
  }
+
  ul.about-list{
- 	width: 250px;
  	list-style: none;
  	padding-top: 20px;
  }
@@ -520,12 +522,114 @@
  	text-align: left;
  	width: 450px;
  	display: inline-block;
- 	padding-right: 20px;
+ 	right: 20px;
+  background-color: red;
  }
 
  .about-list p {
  	width: 80%;
+  font-size: 0.9em;
+  justify-content: center;
  }
+
+
+/* Page 03*/
+.project-header {
+  color: #fff;
+  background: #15202b;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-nav{
+  margin: auto;
+}
+
+.project-nav li {
+  text-transform: capitalize;
+  list-style: none;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.project-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#projects-title {
+  margin: 1em auto 0 auto;
+}
+
+.project {
+  display: none;
+  width: 90%;
+  margin: auto;
+}
+
+.project img {
+  width: 100%;
+  max-width: 70%;
+  height: auto;
+  margin: 1.5em 0;
+}
+
+.active {
+  display: block;
+}
+
+.active-link {
+  
+}
+.active-link:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0.2rem;
+  border-bottom: 3px solid #fff;
+  transition: width 0.5s;
+}
+
+.project-nav li:after {
+  content: "";
+  width: 0;
+  transition: width 0.5s ease-in;
+}
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  #projects-title {
+    display: none;
+  }
+  .project {
+    margin-top: auto;
+    width: 100%;
+  }
+  .project-header {
+    flex: 1;
+  }
+  .project-header span {
+    display: none;
+  }
+  .project-nav{
+    display: flex;
+  }
+
+  .project-nav-ul {
+    display: flex;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+  }
+}
 
 
 
