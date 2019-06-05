@@ -453,8 +453,11 @@
 
  /* Page One */
  #about-page {
- 	margin-top: 50px;
+ 	margin-top: 130px;
  	padding-left: 35px;
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
  }
  #about-content p {
  	color: #747474;
@@ -478,6 +481,7 @@
  	color: #000000;
  	display: block;
   padding-left: 30px;
+  word-break: break-all;
  }
 
  .sentence {
@@ -485,7 +489,7 @@
  	letter-spacing: 0.1em;
   display: inline-flex;
  	color: #747474;
- 	padding: 0px 50px 10% 30px;
+ 	padding: 0px 20px 10% 30px;
   margin-top: -100px;
  }
 
@@ -493,8 +497,9 @@
  	padding-left: 15px;
  	margin: 0px;
  	border-left: 1.5px solid #FB9600;
-  padding-right: 50px;
+  padding-right: 0px;
   margin-left: -20px;
+  padding-right: 40px;
  }
 
  /* Organgenoel_L */
@@ -509,8 +514,11 @@
   float: left;
   width: 30%;
   padding: 10px;
-  padding-right: 10%;
+  padding-right: 5%;
   justify-content: center;
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
 }
 
 /* Clear floats after the columns */
@@ -522,6 +530,10 @@
 /* Page 03*/
 
 .page3 {
+  word-break: break-all;
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: left;
   padding-top: 10%;
   background-color: #0e0e0e;
   color: #fff;
@@ -533,11 +545,6 @@
 
 h1 {
   font-size: 48px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 300;
 }
 
 /* header */
@@ -581,10 +588,16 @@ p {
 }
 
 /* footer */
+footer {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
 footer p {
   text-align: center;
   color: grey;
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Responsiveness */
@@ -600,7 +613,7 @@ footer p {
   }
 
   p {
-    font-size: 15.5px;
+
     width: 100%;
   }
 
@@ -617,7 +630,7 @@ footer p {
     margin: 2%;
   }
   .sentence p {
-  padding-right: 35px;
+  padding-right: 40px;
  }
 }
 
@@ -711,9 +724,6 @@ footer p {
  .sentence {
   padding-bottom: 65px;
  }
- .sentence p {
-  padding-right: 25px;
- }
 
  .header p {
   width: 90%;
@@ -721,7 +731,7 @@ footer p {
 }
 
 .sentence p {
-  padding-right: 0;
+  padding-right: 30;
   margin-left: -20px;
   width: 100%;
 }
@@ -737,6 +747,10 @@ footer p {
 .header p {
   width: 90%;
   margin-top: 10px;
+}
+
+p {
+  word-break: break-all;
 }
 
 #about-page {
@@ -782,6 +796,10 @@ footer p {
   width: 100%;
   justify-content: center;
   text-align: left;
+}
+
+p {
+  word-break: break-all;
 }
 
 .sentence p {
