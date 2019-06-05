@@ -4,6 +4,7 @@
   outline: none;
   vertical-align: baseline;
   font-size: 100%;
+  box-sizing: border-box;
 }
 
  body {
@@ -23,8 +24,6 @@
  p {
  	font-family: 'Roboto' sans-serif;
  	font-style: normal;
- 	font-weight: 800;
- 	font-size: 1.2em;
  	line-height: 200%;
  }
 
@@ -284,8 +283,6 @@
  	background-color: #fff;
  	position: absolute;
  	z-index: 5;
- 	text-align: center;
- 	align-items: center;
  }
 
  .tag p {
@@ -375,8 +372,7 @@
  }
 
  .hero-title {
- 	font-size: 3.7em;
- 	font-weight: 300;
+ 	font-weight: 900;
  }
  .hero-sub-title {
  	margin-top: 20px;
@@ -414,8 +410,7 @@
 
 
  .white-box {
- 	width: 125px;
- 	height: 100px;
+ 	width: 175px;
  	padding: 20px;
  	background-color: #fff;
  	position: absolute;
@@ -459,7 +454,7 @@
  /* Page One */
  #about-page {
  	margin-top: 50px;
- 	padding: 35px;
+ 	padding-left: 35px;
  }
  #about-content p {
  	color: #747474;
@@ -467,79 +462,63 @@
  /* About Me */
  #about-content {
  	position: relative;
- 	padding: 30px;
+ 	padding-bottom: 50px;
+  
  }
 
 
  /* ABOUT ME */
  .About-Me {
  	position: relative;
- 	padding-left: 55px;
  	font-family: Roboto;
  	font-style: normal;
- 	font-weight: 500;
- 	font-size: 30px;
  	line-height: 35px;
  	display: flex;
  	letter-spacing: 0.1em;
  	color: #000000;
  	display: block;
+  padding-left: 30px;
  }
 
  .sentence {
- 	height: auto;
- 	display: inline-flex;
  	align-items: center;
  	letter-spacing: 0.1em;
+  display: inline-flex;
  	color: #747474;
  	padding: 0px 50px 10% 30px;
- 	margin-top: -50px;
+  margin-top: -100px;
  }
 
  .sentence p {
- 	width: 65%;
  	padding-left: 15px;
  	margin: 0px;
  	border-left: 1.5px solid #FB9600;
+  padding-right: 50px;
+  margin-left: -20px;
  }
 
  /* Organgenoel_L */
  .orange {
- 	position: relative;
- 	padding-left: 5%;
+  padding-top: 70px;
+  display: inline-block;
  }
 
- ul {
- 	display: flex;
- 	align-items: center;
- 	justify-content: center;
- 	margin: 0 auto;
- 	align-content: center;
- 	position: relative;
- }
-
- ul.about-list{
- 	list-style: none;
- 	padding-top: 20px;
- }
-
- ul.about-list li {
- 	display: inline-block;
- }
-
- .about-list {
- 	text-align: left;
- 	width: 450px;
- 	display: inline-block;
- }
-
- .about-list p {
- 	width: 80%;
-  font-size: 0.9em;
+/* Create three equal columns that floats next to each other */
+.column {
+  margin: 0 auto;
+  float: left;
+  width: 30%;
+  padding: 10px;
+  padding-right: 10%;
   justify-content: center;
- }
+}
 
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Page 03*/
 
 .page3 {
@@ -550,12 +529,6 @@
 .wrapper {
   width: 90%;
   margin: 0 auto;
-}
-
-.navBar::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 h1 {
@@ -570,7 +543,7 @@ p {
 /* header */
 
 .header {
-  margin: 100px 0 200px 120px;
+ margin: 130px 0 80px 40px;
 }
 
 .header p {
@@ -622,13 +595,13 @@ footer p {
     margin: 100px 0 100px 30px;
   }
 
-  .header h1 {
+  h1 {
     font-size: 36px;
   }
 
-  .header p {
-    font-size: 12px;
-    width: 90%;
+  p {
+    font-size: 15.5px;
+    width: 100%;
   }
 
   .work img {
@@ -640,14 +613,14 @@ footer p {
     margin: 130px 0 40px 12px;
   }
 
-  .header2 h1 {
+  /*.header2 h1 {
     font-size: 36px;
   }
 
   .header2 p {
     font-size: 12px;
     width: 90%;
-  }
+  }*/
 
   .work2 img {
     margin: 2%;
@@ -701,7 +674,22 @@ footer p {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  //CSS
+  .orange {
+    display: none;
+  }
+
+  .white-box {
+    display: none;
+  }
+
+  .black-left {
+    display: none;
+  }
+
+   /* ABOUT ME */
+ .About-Me {
+  padding-left: 35px;
+ }
   
 }
 
@@ -712,8 +700,56 @@ footer p {
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  //CSS
-  
+  .orange {
+    display: none;
+  }
+
+  .white-box {
+    display: none;
+  }
+  .black-left {
+    display: none;
+  }
+  /* ABOUT ME */
+ .About-Me {
+  padding-left: 35px;
+ }
+ .sentence {
+  padding-bottom: 65px;
+ }
+
+ .header p {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.sentence p {
+  padding-right: 0;
+  margin-left: -20px;
+  width: 100%;
+}
+
+ /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+}
+
+.header p {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.sentence p {
+  padding-right: 0;
+  margin-left: -20px;
+}
+
+#about-page {
+  padding-left: 10px;
+ }
 }
 
 /* 
@@ -722,7 +758,41 @@ footer p {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  #about-page {
+  padding-left: 0px;
+ }
   
-  //CSS
+  .orange {
+    display: none;
+  }
+
+  .white-box {
+    display: none;
+  }
+
+  .black-left {
+   display: none;
+  }
+  /* ABOUT ME */
+ .About-Me {
+  padding-left: 35px;
+ }
   
+  .header p {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+}
+
+.sentence p {
+  padding-right: 0;
+  margin-left: -20px;
+}
 }
