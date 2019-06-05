@@ -613,18 +613,12 @@ footer p {
     margin: 130px 0 40px 12px;
   }
 
-  /*.header2 h1 {
-    font-size: 36px;
-  }
-
-  .header2 p {
-    font-size: 12px;
-    width: 90%;
-  }*/
-
   .work2 img {
     margin: 2%;
   }
+  .sentence p {
+  padding-right: 35px;
+ }
 }
 
 
@@ -717,6 +711,9 @@ footer p {
  .sentence {
   padding-bottom: 65px;
  }
+ .sentence p {
+  padding-right: 25px;
+ }
 
  .header p {
   width: 90%;
@@ -742,11 +739,6 @@ footer p {
   margin-top: 10px;
 }
 
-.sentence p {
-  padding-right: 0;
-  margin-left: -20px;
-}
-
 #about-page {
   padding-left: 10px;
  }
@@ -762,6 +754,7 @@ footer p {
   #about-page {
   padding-left: 0px;
  }
+
   
   .orange {
     display: none;
